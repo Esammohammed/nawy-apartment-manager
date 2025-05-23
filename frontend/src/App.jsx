@@ -1,13 +1,12 @@
-import { useState } from 'react'
+import React from 'react';
+import ApartmentList from './components/ApartmentList';
 
-
-function App() { 
-
+function Home() {
   return (
-    <>
-      
-    </>
-  )
+    <div>
+      <ApartmentList />
+    </div>
+  );
 }
 
-export default App
+export default Home;

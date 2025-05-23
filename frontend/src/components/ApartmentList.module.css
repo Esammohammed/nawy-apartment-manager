@@ -1,0 +1,68 @@
+.container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.addButton {
+  margin: 0 0 20px 0;
+  padding: 12px 24px;
+  background-color: #37cd3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.loadingText {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  padding: 50px;
+}
+
+/* Responsive grid layout */
+.list {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Mobile (1 column) */
+@media (max-width: 599px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+  
+  .addButton {
+    max-width: 100%;
+  }
+}
+
+/* Small tablets (2 columns) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large tablets/laptops (3 columns) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktops (4 columns) */
+@media (min-width: 1200px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .addButton {
+    max-width: 300px;
+  }
+}
