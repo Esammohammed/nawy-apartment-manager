@@ -1,8 +1,7 @@
 
 from appartments_manager.models import Apartment, ApartmentImage
-class ApartmentsManagerRepository:
 
- 
+class ApartmentsManagerRepository:
 
     def get_apartments(self):
         """
@@ -17,6 +16,7 @@ class ApartmentsManagerRepository:
         """
         try:
             return Apartment.objects.get(id=apartment_id)
+        
         except Apartment.DoesNotExist:
             return None
     
