@@ -1,0 +1,58 @@
+.formContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 8px;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkboxInput {
+  margin-right: 10px;
+}
+
+.imageInputContainer {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.imageInput {
+  flex: 1;
+  padding: 8px;
+}
+
+.removeImageButton {
+  margin-left: 5px;
+  padding: 8px;
+}
+
+.addImageButton {
+  margin-top: 5px;
+  padding: 8px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
