@@ -1,0 +1,25 @@
+.details {
+  padding: 1rem;
+}
+
+.imageScroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.imageScroll img {
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info {
+  list-style: none;
+  padding: 0;
+}
+
+.info li {
+  margin: 5px 0;
+}
