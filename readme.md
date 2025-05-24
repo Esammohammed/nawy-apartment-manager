@@ -67,6 +67,20 @@ docker-compose down
 ```
 
 ---
+### 5. Screenshots
+
+#### Apartment List
+![Apartment List](screenshot/Screenshot_1.png)
+
+#### Apartment List Responsive (Mobile)
+![Apartment List Responsive (Mobile)](screenshot/Screenshot_2.png)
+
+#### Add Apartment Form
+![Add Apartment Form](screenshot/screenshot_3.png)
+
+####  Apartment Details & Navigating Apartment Images 
+![Navigating Apartment Images](screenshot/screenshot_6.png)
+
 
 ## License
 
