@@ -10,7 +10,7 @@ A full-stack apartment management web application built with:
 
 ## Features
 
-- Create new apartments with detailed information, including name, address, and support for uploading multiple images
+- Create new apartments with detailed information, including name, unitname, and support for uploading multiple images
 - Browse a responsive list of all apartments, optimized for both mobile and desktop devices
 - View comprehensive apartment details, featuring image galleries and full property information
 
