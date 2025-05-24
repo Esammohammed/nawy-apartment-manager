@@ -45,7 +45,7 @@ nawy-apartment-manager/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/nawy-apartment-manager.git
+git clone https://github.com/Esammohammed/nawy-apartment-manager.git
 git checkout master
 cd nawy-apartment-manager
 ```
