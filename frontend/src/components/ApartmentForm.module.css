@@ -1,58 +1,200 @@
+/* ApartmentForm.module.css */
+
 .formContainer {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  color: #eee;
+  font-size: 1rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #61dafb;
+  text-align: center;
+}
+
+.errorMessage {
+  background-color: #b33939;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .formGroup {
-  margin-bottom: 15px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.formInput {
-  width: 100%;
-  padding: 8px;
+.formGroup label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.formInput,
+.fileInput {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: #eee;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formInput:focus,
+.fileInput:focus {
+  outline: none;
+  background-color: #555;
+  box-shadow: 0 0 8px #61dafb;
+  color: #fff;
+  caret-color: #61dafb;
 }
 
 .checkboxGroup {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 1.2rem;
+  gap: 0.5rem;
 }
 
 .checkboxInput {
-  margin-right: 10px;
-}
-
-.imageInputContainer {
-  display: flex;
-  margin-bottom: 5px;
-}
-
-.imageInput {
-  flex: 1;
-  padding: 8px;
-}
-
-.removeImageButton {
-  margin-left: 5px;
-  padding: 8px;
-}
-
-.addImageButton {
-  margin-top: 5px;
-  padding: 8px;
-}
-
-.submitButton {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
 }
 
+.checkboxGroup label {
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  color: #ccc;
+}
+
+.imagePreviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.previewItem {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.previewImage {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.previewName {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.removeButton {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  background: #b33939;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.25s ease;
+}
+
+.removeButton:hover {
+  opacity: 1;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #21a1f1;
+  color: #fff;
+}
+
 .submitButton:disabled {
-  background-color: #cccccc;
+  background-color: #444;
+  color: #888;
   cursor: not-allowed;
+}
+
+/* Spinner for loading */
+.spinner {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid #61dafb; /* Blue */
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .formContainer {
+    padding: 1.5rem 1.8rem;
+    margin: 1rem;
+  }
+
+  .previewItem {
+    width: 80px;
+    height: 80px;
+  }
 }

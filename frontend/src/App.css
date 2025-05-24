@@ -1,3 +1,11 @@
+/* App.css */
+
+ 
+.app-container {
+  padding: 2rem;
+  background-color: #1359e7;
+  color: white;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,8 +43,11 @@
 
 .card {
   padding: 2em;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .read-the-docs {
-  color: #888;
+  color: #aaa;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import ApartmentList from './components/ApartmentList';
+import './App.css';
 
 function Home() {
   return (
-    <div>
+  <div className="app-container">
       <ApartmentList />
-    </div>
+  </div>
   );
 }
 
