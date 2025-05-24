@@ -76,10 +76,10 @@ docker-compose down
 ![Apartment List Responsive (Mobile)](screenshot/Screenshot_2.png)
 
 #### Add Apartment Form
-![Add Apartment Form](screenshot/screenshot_3.png)
+![Add Apartment Form](screenshot/Screenshot_3.png)
 
 ####  Apartment Details & Navigating Apartment Images 
-![Navigating Apartment Images](screenshot/screenshot_6.png)
+![Navigating Apartment Images](screenshot/Screenshot_6.png)
 
 
 ## License
