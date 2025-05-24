@@ -46,6 +46,7 @@ nawy-apartment-manager/
 
 ```bash
 git clone https://github.com/your-username/nawy-apartment-manager.git
+git checkout master
 cd nawy-apartment-manager
 ```
 ### 2. Build and Run the Application
